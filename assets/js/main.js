@@ -14,3 +14,8 @@ window.addEventListener('scroll', () => backToTop?.classList.toggle('is-visible'
 backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 // Keep the browser tab identity consistent across the public site.
 document.title = 'CoSolutioning';
+const favicon = document.querySelector('link[rel="icon"]') || document.createElement('link');
+favicon.rel = 'icon';
+favicon.type = 'image/png';
+favicon.href = '../assets/images/favicon-cosolutioning.png';
+if (!favicon.parentNode) document.head.append(favicon);
