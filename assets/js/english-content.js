@@ -7,6 +7,17 @@ const englishContent = {
   recursos: `<article class="article-content"><h1>Resources</h1><h2>Learning Log</h2><p>The idea behind the Learning Log is that every experiment carried out is documented. It consists of three fields that record: “what were we seeking to learn?”, the “experiment description,” and the “results and knowledge.” If AI is fed this log, we can use that experience to uncover insights, recommend new experimental paths, and identify trends that may not be immediately apparent. The more explicit the content of each experiment is, the greater the ability to learn from it.</p><h3>Example</h3><div class="table-wrap" tabindex="0" aria-label="Learning Log example table. Scroll horizontally to view all columns."><table class="learning-log-table"><thead><tr><th scope="col">What are we seeking to learn?</th><th scope="col">Experiment description</th><th scope="col">Results and knowledge</th></tr></thead><tbody><tr><td>How can we improve email open rates?</td><td>An A/B test was conducted on the email subject line: 60% of users kept “Welcome to Dare2Adapt,” while the remaining 40% received “Discover how Dare2Adapt helps you in your work with AI.”</td><td>Users who received the second subject line opened the email 50% more often. This indicates that the rate can be improved through better subject lines, and new experiments with different subjects will be run to identify those that produce the best results. A discussion with the marketing team suggests that we should also test by time of day and day of the week.</td></tr><tr><td>Would our users be interested in the new financial education feature?</td><td>A financial education button was placed on the application home page. When users clicked it, a notice appeared explaining that the feature would be available soon. The button was available for one week, from Monday, March 4 to Sunday, March 10.</td><td>Of the users who visited the page, only 4% clicked the financial education button. There does not appear to be much value in including this module, so it is recommended that its priority be lowered.</td></tr></tbody></table></div></article>`,
   autores: `<article class="article-content"><h1>Authors</h1><p>This framework was created to help organisations design Human + AI teams that solve real problems and create sustained value.</p></article>`
 };
+const englishImageVersions = {
+  'Combinacion_conocimiento_habilidades.jpg': 'Combinacion_conocimiento_habilidades_EN_V2.jpg',
+  'diseno_organizacion_humano_ia.jpg': 'diseno_organizacion_humano_ia_EN_V2.jpg',
+  'crew_manager.jpg': 'crew_manager_EN_V2.jpg',
+  'linea_de_tiempo.jpg': 'linea_de_tiempo_EN_V2.jpg'
+};
+Object.keys(englishContent).forEach((page) => {
+  Object.entries(englishImageVersions).forEach(([original, replacement]) => {
+    englishContent[page] = englishContent[page].replaceAll(original, replacement);
+  });
+});
 const englishPage = document.body.dataset.page;
 if (englishContent[englishPage]) document.querySelector('.page-main').innerHTML = englishContent[englishPage];
 if (englishPage === 'framework') document.querySelector('.article-content').insertAdjacentHTML('beforeend', '<p class="article-next-action"><a href="principles.html">Get started <span aria-hidden="true">→</span></a></p>');
