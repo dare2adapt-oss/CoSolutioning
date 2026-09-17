@@ -30,7 +30,7 @@ const principlesContent = `
       <li>Evolucionamos continuamente la colaboración Humano + IA para aumentar su capacidad colectiva de generar valor.</li>
       <li>El humano está en el centro: el colaborador y el consumidor.</li>
       <li>Estimular el pensamiento crítico es indispensable.</li>
-      <li><strong>El poder de lo simple:</strong> La simplicidad genera claridad, la claridad facilita la acción y la acción sostenida crea valor. Lo simple se entiende, se ejecuta y se convierte más rápido en valor.</li>
+        <li>La simplicidad genera claridad, la claridad facilita la acción y la acción sostenida crea valor. Lo simple se entiende, se ejecuta y se convierte más rápido en valor.</li>
       <li>Simplificar las cosas no significa trivializar. Simplificar es el arte de identificar las partes de un sistema complejo y resolverlas de forma que todo el sistema siga teniendo sentido.</li>
       <li>Los equipos solucionadores hacen Discovery y Delivery al tiempo, respondiendo a las preguntas:
         <ul>
@@ -48,7 +48,7 @@ const rolesContent = `
     <p>Esta composición favorece la autonomía, reduce dependencias y permite conectar continuamente el aprendizaje con la construcción y evolución de las soluciones.</p>
     <p>Partimos de una idea fundamental: un equipo se conforma por un grupo de personas que, desde sus diferentes roles, aportan conocimientos, experiencias, habilidades y capacidades complementarias para resolver problemas y construir soluciones. La potencia del equipo surge de esa combinación.</p>
     <p>La incorporación de la inteligencia artificial transforma profundamente esta ecuación. La IA deja de ocupar únicamente el lugar de asistente y se integra como un miembro activo del equipo, aportando conocimiento, capacidades, habilidades y ejecución. Esto amplía significativamente las capacidades disponibles para construir soluciones y productos digitales.</p>
-    <figure class="content-figure"><img src="../assets/images/Combinacion_conocimiento_habilidades_ES_V2.jpg" alt="Combinación de conocimiento, habilidades y capacidades entre humanos e inteligencia artificial"><figcaption>Combinación de conocimiento, habilidades y capacidades Humano + IA.</figcaption></figure>
+    <figure class="content-figure"><img src="../assets/images/Combinacion_conocimiento_habilidades_ES_V3.png" alt="Combinación de conocimiento, habilidades y capacidades entre humanos e inteligencia artificial"><figcaption>Combinación de conocimiento, habilidades y capacidades Humano + IA.</figcaption></figure>
     <p>El resultado es un equipo con acceso a un universo de conocimiento y capacidades mucho mayor al que podría concentrar una sola persona. La potencia del equipo empieza a depender de qué tan bien humanos e inteligencias artificiales logran combinar sus capacidades para resolver problemas y generar valor juntos.</p>
     <p>Este nuevo contexto transforma la manera en que diseñamos los equipos y definimos los roles. La organización evoluciona hacia un modelo compuesto por equipos Humano + IA, complementados por capacidades transversales que aportan conocimiento especializado.</p>
     <figure class="content-figure"><img src="../assets/images/diseno_organizacion_humano_ia_ES_V2.jpg" alt="Diseño organizacional de equipos Humano más IA y capacidades transversales"><figcaption>Diseño organizacional de equipos Humano + IA y capacidades transversales.</figcaption></figure>
@@ -191,12 +191,47 @@ const resourcesContent = `
       </table>
     </div>
   </article>`;
-const contentByPage = { framework: frameworkContent, principios: principlesContent, roles: rolesContent, artefactos: artifactsContent, eventos: eventsContent, recursos: resourcesContent };
+const authorsContent = `
+  <article class="authors-page">
+    <header class="authors-intro">
+      <h1>Autores</h1>
+    </header>
+    <section class="authors-grid" aria-label="Autores del framework CoSolutioning">
+      <article class="author-card">
+        <div class="author-photo-wrap"><img src="../assets/images/Foto_Jonnathan02.png" alt="Jonnathan Bermudez" class="author-photo" loading="lazy"></div>
+        <div class="author-card__content">
+          <h2>Jonnathan Bermudez</h2>
+          <p class="author-card__specialty">Colaboración humano + IA</p>
+          <p>Con más de 20 años de experiencia creando soluciones y conectando las necesidades del negocio con las posibilidades de la tecnología. Su trabajo integra estrategia, arquitectura tecnológica, diseño organizacional y capacidades de inteligencia artificial para transformar retos reales en soluciones útiles, medibles y capaces de evolucionar. Impulsa nuevas formas de colaboración entre personas e IA, promoviendo una integración intencional donde el propósito, el criterio humano y la responsabilidad orientan las decisiones tecnológicas. Su contribución al framework ayuda a las organizaciones a incorporar la IA en sus formas de trabajo de manera práctica, sostenible y enfocada en generar valor para las personas y el negocio.</p>
+          <a class="author-card__bio-link" href="https://www.linkedin.com/in/jonnathanbermudez" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="author-card">
+        <div class="author-photo-wrap"><img src="../assets/images/Foto_Felipe02.png" alt="Felipe Soto" class="author-photo" loading="lazy"></div>
+        <div class="author-card__content">
+          <h2>Felipe Soto</h2>
+          <p class="author-card__specialty">Evolución organizacional</p>
+          <p>Consultor, conferencista y facilitador, dedicado a ayudar a las personas y organizaciones a desarrollar su potencial a través de la innovación y el liderazgo centrados en las personas. Con más de 10 años de experiencia en diferentes industrias, ha acompañado a equipos a conectar la empatía, la estrategia y la ejecución para generar un impacto significativo. Cree que las transformaciones sostenibles ocurren cuando las organizaciones cultivan una cultura de liderazgo orientada al servicio, donde los líderes crecen ayudando a otros a desarrollarse y alcanzar su máximo potencial. Su trabajo combina el rigor de las prácticas Lean y Agile con la creatividad del Design Thinking, siempre conectado con los desafíos y oportunidades del mundo real.</p>
+          <a class="author-card__bio-link" href="https://www.linkedin.com/in/sotofelipe/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="author-card">
+        <div class="author-photo-wrap"><img src="../assets/images/Foto_Cristian02.png" alt="Cristian Bermudez" class="author-photo" loading="lazy"></div>
+        <div class="author-card__content">
+          <h2>Cristian Bermudez</h2>
+          <p class="author-card__specialty">Estrategia y diseño de soluciones</p>
+          <p>Profesional con más de 19 años de experiencia liderando equipos en la construcción de soluciones de alto impacto y guiando organizaciones en procesos de transformación. Aporta conocimiento profundo en metodologías, dinámicas de trabajo y diseño organizacional orientados a la generación de valor, conectando estrategia, personas y ejecución. Su contribución al framework permite diseñar nuevas formas de colaboración entre humanos e IAs, integrando sus capacidades de manera intencional y creando dinámicas que potencian lo que pueden lograr juntos. Mantiene el foco en generar valor para las personas y el negocio, conectando el propósito con soluciones que se pueden construir, medir, validar y evolucionar.</p>
+          <a class="author-card__bio-link" href="https://www.linkedin.com/in/cristian-bermudez/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </section>
+  </article>`;
+const contentByPage = { framework: frameworkContent, principios: principlesContent, roles: rolesContent, artefactos: artifactsContent, eventos: eventsContent, recursos: resourcesContent, autores: authorsContent };
 const pageContent = contentByPage[current] || `<article class="article-content"><h1>${titles[current]}</h1></article>`;
 document.body.insertAdjacentHTML('afterbegin', `<header class="topbar"><a class="brand" href="${p}index.html"><span class="brand-mark"><i></i><i></i><i></i></span><span><strong>Augmented Thinking</strong><small>Human judgment. Artificial intelligence.</small></span></a><nav class="top-nav"><a href="${p}index.html" data-nav="inicio">Inicio</a><a href="${p}superior/framework.html" data-nav="framework">Framework</a><a href="${p}superior/recursos.html" data-nav="recursos">Recursos</a><a href="${p}superior/autores.html" data-nav="autores">Autores</a><span class="language-switcher" aria-label="Seleccionar idioma"><a href="?lang=es" lang="es" hreflang="es" aria-current="true">ES</a><span aria-hidden="true">|</span><a href="?lang=en" lang="en" hreflang="en">EN</a></span><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú de exploración"><span></span><span></span><span></span></button></nav></header><nav class="mobile-menu" id="mobile-menu" aria-label="Explorar framework"><a href="${p}index.html" data-nav="inicio"><span>⌂</span>Inicio</a><a href="${p}explorar/principios.html" data-nav="principios"><span>☆</span>Principios</a><a href="${p}explorar/roles.html" data-nav="roles"><span>♧</span>Roles</a><a href="${p}explorar/artefactos.html" data-nav="artefactos"><span>⚒</span>Artefactos</a><a href="${p}explorar/eventos.html" data-nav="eventos"><span>⊙</span>Eventos</a></nav><div class="site-layout"><aside class="sidebar"><p class="eyebrow">EXPLORAR</p><nav class="side-nav"><a href="${p}index.html" data-nav="inicio"><span>⌂</span>Inicio</a><a href="${p}explorar/principios.html" data-nav="principios"><span>☆</span>Principios</a><a href="${p}explorar/roles.html" data-nav="roles"><span>♧</span>Roles</a><a href="${p}explorar/artefactos.html" data-nav="artefactos"><span>⚒</span>Artefactos</a><a href="${p}explorar/eventos.html" data-nav="eventos"><span>⊙</span>Eventos</a></nav><section class="download-card"><span class="download-icon">↓</span><h2>Descarga el<br>Framework</h2><p>Accede a la versión completa en PDF y otros formatos.</p><a href="${p}docs/Draft_Framework_Humano_IA.pdf" target="_blank" rel="noopener noreferrer">Descargar ahora</a></section></aside><main class="content-page"><section class="page-main">${pageContent}</section><aside class="page-empty"><p class="eyebrow">EN ESTA PÁGINA</p><nav class="page-toc" aria-label="Contenido de la página"></nav></aside></main></div><button class="back-to-top" type="button" aria-label="Volver al inicio">↑</button>`);
 const headerBrand = document.querySelector('.brand');
 headerBrand.setAttribute('aria-label', 'CoSolutioning, inicio');
-headerBrand.innerHTML = `<img class="brand-logo brand-logo--full" src="${p}assets/images/logo-cosolutioning-black.png" alt="CoSolutioning" width="218" height="49"><img class="brand-logo brand-logo--mark" src="${p}assets/images/logo-cosolve-mark.png" alt="" width="46" height="36"><span class="brand-copy"><small>The Collaborative Solutioning Framework</small></span>`;
+headerBrand.innerHTML = `<img class="brand-logo brand-logo--full" src="${p}assets/images/logo-cosolutioning-wordmark-black.png" alt="CoSolutioning" width="176" height="35"><img class="brand-logo brand-logo--mark" src="${p}assets/images/Logo_CoSolutioning01.png" alt="" width="50" height="50"><span class="brand-copy"><small>The Collaborative Solutioning Framework</small></span>`;
 document.querySelectorAll('[data-nav]').forEach((a) => { if (a.dataset.nav === current) a.classList.add('active'); });
 const siteLanguage = document.documentElement.lang === 'en' ? 'en' : 'es';
 const pagePaths = siteLanguage === 'en' ? englishLocalPages : localPages;
@@ -243,5 +278,5 @@ document.title = 'CoSolutioning';
 const favicon = document.querySelector('link[rel="icon"]') || document.createElement('link');
 favicon.rel = 'icon';
 favicon.type = 'image/png';
-favicon.href = `${location.pathname.includes('/en/') || location.pathname.includes('/es/') ? '../' : ''}assets/images/favicon-cosolutioning.png`;
+favicon.href = `${location.pathname.includes('/en/') || location.pathname.includes('/es/') ? '../' : ''}assets/images/Logo_CoSolutioning01.png`;
 if (!favicon.parentNode) document.head.append(favicon);

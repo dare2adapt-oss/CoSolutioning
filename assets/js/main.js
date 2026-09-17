@@ -17,5 +17,5 @@ document.title = 'CoSolutioning';
 const favicon = document.querySelector('link[rel="icon"]') || document.createElement('link');
 favicon.rel = 'icon';
 favicon.type = 'image/png';
-favicon.href = '../assets/images/favicon-cosolutioning.png';
+favicon.href = '../assets/images/Logo_CoSolutioning01.png';
 if (!favicon.parentNode) document.head.append(favicon);
