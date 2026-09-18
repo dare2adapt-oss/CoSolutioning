@@ -5,7 +5,7 @@ const localPages = { inicio: 'index.html', framework: 'framework.html', recursos
 const englishLocalPages = { ...localPages, recursos: 'resources.html', principios: 'principles.html', artefactos: 'artifacts.html', eventos: 'events.html' };
 const frameworkContent = `
   <article class="article-content">
-    <h1>Framework</h1>
+    <h1>El Framework</h1>
     <p>Estamos entrando en un momento en el que nuestra capacidad para crear soluciones cambia radicalmente. Las formas de trabajo siempre han evolucionado como respuesta a las herramientas y capacidades disponibles en cada momento de la historia. La Inteligencia Artificial representa uno de esos puntos de inflexión: una capacidad que aprende, razona, crea, ejecuta y coordina trabajo a una velocidad que crece exponencialmente.</p>
     <p>Sin embargo, hay algo esencial que permanece, generamos valor cuando resolvemos problemas reales que tienen las personas y lo hacemos de forma significativa. Construir una solución sigue teniendo sentido cuando produce valor para las personas y, como consecuencia, genera valor para el negocio. <strong>Por eso conservamos principios provenientes del método científico:</strong> Observar la realidad, comprender el problema, formular hipótesis, experimentar, medir evidencia, aprender y evolucionar. La tecnología acelera nuestra capacidad de hacer; la evidencia continúa guiando qué construir y cómo debe evolucionar.</p>
     <p>Aplicar los fundamentos del método científico nos permite atender a una realidad: la naturaleza como funciona el mundo y cómo actuamos las personas.</p>
@@ -51,7 +51,7 @@ const rolesContent = `
     <figure class="content-figure"><img src="../assets/images/Combinacion_conocimiento_habilidades_ES_V3.png" alt="Combinación de conocimiento, habilidades y capacidades entre humanos e inteligencia artificial"><figcaption>Combinación de conocimiento, habilidades y capacidades Humano + IA.</figcaption></figure>
     <p>El resultado es un equipo con acceso a un universo de conocimiento y capacidades mucho mayor al que podría concentrar una sola persona. La potencia del equipo empieza a depender de qué tan bien humanos e inteligencias artificiales logran combinar sus capacidades para resolver problemas y generar valor juntos.</p>
     <p>Este nuevo contexto transforma la manera en que diseñamos los equipos y definimos los roles. La organización evoluciona hacia un modelo compuesto por equipos Humano + IA, complementados por capacidades transversales que aportan conocimiento especializado.</p>
-    <figure class="content-figure"><img src="../assets/images/diseno_organizacion_humano_ia_ES_V2.jpg" alt="Diseño organizacional de equipos Humano más IA y capacidades transversales"><figcaption>Diseño organizacional de equipos Humano + IA y capacidades transversales.</figcaption></figure>
+    <figure class="content-figure"><img src="../assets/images/diseno_organizacion_humano_ia_ES_V3.jpg" alt="Diseño organizacional de equipos Humano más IA y capacidades transversales"><figcaption>Diseño organizacional de equipos Humano + IA y capacidades transversales.</figcaption></figure>
     <p>De esta forma el conocimiento está disponible donde se crea el valor.</p>
     <p>Cada equipo solucionador está conformado por un Solution Expert, un AI Engineer y un ecosistema de agentes de Inteligencia Artificial. Juntos conforman una unidad autónoma capaz de comprender el problema, diseñar la solución, construirla y evolucionarla de manera continua.</p>
     <p>Estas capacidades son potenciadas por un diseño organizacional basado en los principios de <a href="https://teamtopologies.com/" target="_blank" rel="noopener noreferrer">Team Topologies</a>. Alrededor de los equipos solucionadores existe una red de equipos transversales que desarrollan y comparten conocimiento especializado, aceleran la adopción de nuevas capacidades y ofrecen servicios. Este ecosistema está compuesto por “Equipo Habilitador”, que habilitan nuevos conocimientos, capacidades y habilidades; “Equipo de Subsistema Complicado”, que soluciona temas relacionados con conocimiento experto en dominios de alta complejidad; y “Equipos de Plataforma”, que construyen plataformas y servicios que permiten crear y desplegar el valor que construyen los equipos solucionadores.</p>
@@ -114,9 +114,9 @@ const artifactsContent = `
     <p>Los artefactos a utilizar son:</p>
     <ul class="article-list">
       <li>Documento con los problemas a solucionar y las hipótesis a validar.</li>
-      <li>OKR-Based Roadmaps.</li>
+      <li><a href="https://jeffgothelf.com/blog/what-does-an-agile-product-roadmap-look-like/" target="_blank" rel="noopener noreferrer">OKR-Based Roadmaps</a>.</li>
       <li>Documentos de Specs (versionados): artefacto donde se especifica el producto.</li>
-      <li>Learning log.</li>
+      <li><a href="recursos.html" target="_blank" rel="noopener noreferrer">Learning log (Recursos)</a>.</li>
       <li><strong>Arnés (Harness):</strong> estructura que contiene el conjunto de reglas, guardarraíles y bucles de validación automática que delimitan y dirigen la ejecución del agente de IA para asegurar resultados seguros, medibles, escalables y evolucionables.</li>
     </ul>
   </article>`;
@@ -180,16 +180,21 @@ const resourcesContent = `
     <h1>Recursos</h1>
     <h2>Learning Log</h2>
     <p>La idea del Learning Log es que todos los experimentos realizados queden documentados. Consta de tres espacios donde se va marcando: “¿qué buscábamos aprender?”, la “descripción del experimento” y los “resultados y conocimiento”. Si la IA se alimenta de este log, podremos utilizar esta experiencia para encontrar insights, recomendar cursos de nuevos experimentos y descifrar tendencias que a simple vista podrían no ser tan evidentes. Entre más explícito sea el contenido de cada experimento, mayor será la capacidad de aprender de ellos.</p>
-    <h3>Ejemplo</h3>
-    <div class="table-wrap" tabindex="0" aria-label="Tabla de ejemplo de Learning Log. Desliza horizontalmente para ver todas las columnas.">
-      <table class="learning-log-table">
-        <thead><tr><th scope="col">¿Qué buscamos aprender?</th><th scope="col">Descripción del experimento</th><th scope="col">Resultados y conocimiento</th></tr></thead>
-        <tbody>
-          <tr><td>Cómo mejorar la tasa de apertura de correos electrónicos</td><td>Se realizó un A/B testing con el “Asunto” del correo: a un 60% de usuarios se les mantuvo “Bienvenidos a Dare2Adapt” y a un 40% se les modificó por “Descubre cómo Dare2Adapt te ayuda en tu trabajo con la IA”.</td><td>Los usuarios que recibieron el segundo asunto abrieron más el correo electrónico en un 50%. Se entiende que se puede mejorar la tasa con mejores asuntos y se realizarán nuevos experimentos con asuntos diferentes para encontrar aquellos que den los mejores resultados. Una discusión con el equipo de marketing sugiere que también probemos hacer pruebas por hora del día y día de la semana.</td></tr>
-          <tr><td>¿A nuestros usuarios les interesaría la nueva función de educación financiera?</td><td>Se puso un botón de educación financiera en el home de la aplicación y, cuando el usuario le daba clic, aparecía un aviso que informaba que esa funcionalidad estaría disponible próximamente. El botón estuvo disponible durante una semana, del lunes 4 de marzo al domingo 10 de marzo.</td><td>De los usuarios que ingresaron a la página, solo el 4% dieron clic en el botón de educación financiera. No parece que haya mucho valor en incluir ese módulo, por lo que se recomienda bajarle la prioridad.</td></tr>
-        </tbody>
-      </table>
-    </div>
+    <h3>Ejemplos</h3>
+    <section class="learning-log-examples" aria-label="Ejemplos de Learning Log">
+      <article class="learning-log-example">
+        <h4>Ejemplo 1</h4>
+        <p><strong>Qué buscamos:</strong> Cómo mejorar la tasa de apertura de correos electrónicos.</p>
+        <p><strong>Descripción:</strong> Se realizó un A/B testing con el “Asunto” del correo: a un 60% de usuarios se les mantuvo “Bienvenidos a Dare2Adapt” y a un 40% se les modificó por “Descubre cómo Dare2Adapt te ayuda en tu trabajo con la IA”.</p>
+        <p><strong>Resultado:</strong> Los usuarios que recibieron el segundo asunto abrieron más el correo electrónico en un 50%. Se entiende que se puede mejorar la tasa con mejores asuntos y se realizarán nuevos experimentos con asuntos diferentes para encontrar aquellos que den los mejores resultados. Una discusión con el equipo de marketing sugiere que también probemos hacer pruebas por hora del día y día de la semana.</p>
+      </article>
+      <article class="learning-log-example">
+        <h4>Ejemplo 2</h4>
+        <p><strong>Qué buscamos:</strong> ¿A nuestros usuarios les interesaría la nueva función de educación financiera?</p>
+        <p><strong>Descripción:</strong> Se puso un botón de educación financiera en el home de la aplicación y, cuando el usuario le daba clic, aparecía un aviso que informaba que esa funcionalidad estaría disponible próximamente. El botón estuvo disponible durante una semana, del lunes 4 de marzo al domingo 10 de marzo.</p>
+        <p><strong>Resultado:</strong> De los usuarios que ingresaron a la página, solo el 4% dieron clic en el botón de educación financiera. No parece que haya mucho valor en incluir ese módulo, por lo que se recomienda bajarle la prioridad.</p>
+      </article>
+    </section>
   </article>`;
 const authorsContent = `
   <article class="authors-page">
@@ -228,7 +233,7 @@ const authorsContent = `
   </article>`;
 const contentByPage = { framework: frameworkContent, principios: principlesContent, roles: rolesContent, artefactos: artifactsContent, eventos: eventsContent, recursos: resourcesContent, autores: authorsContent };
 const pageContent = contentByPage[current] || `<article class="article-content"><h1>${titles[current]}</h1></article>`;
-document.body.insertAdjacentHTML('afterbegin', `<header class="topbar"><a class="brand" href="${p}index.html"><span class="brand-mark"><i></i><i></i><i></i></span><span><strong>Augmented Thinking</strong><small>Human judgment. Artificial intelligence.</small></span></a><nav class="top-nav"><a href="${p}index.html" data-nav="inicio">Inicio</a><a href="${p}superior/framework.html" data-nav="framework">Framework</a><a href="${p}superior/recursos.html" data-nav="recursos">Recursos</a><a href="${p}superior/autores.html" data-nav="autores">Autores</a><span class="language-switcher" aria-label="Seleccionar idioma"><a href="?lang=es" lang="es" hreflang="es" aria-current="true">ES</a><span aria-hidden="true">|</span><a href="?lang=en" lang="en" hreflang="en">EN</a></span><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú de exploración"><span></span><span></span><span></span></button></nav></header><nav class="mobile-menu" id="mobile-menu" aria-label="Explorar framework"><a href="${p}index.html" data-nav="inicio"><span>⌂</span>Inicio</a><a href="${p}explorar/principios.html" data-nav="principios"><span>☆</span>Principios</a><a href="${p}explorar/roles.html" data-nav="roles"><span>♧</span>Roles</a><a href="${p}explorar/artefactos.html" data-nav="artefactos"><span>⚒</span>Artefactos</a><a href="${p}explorar/eventos.html" data-nav="eventos"><span>⊙</span>Eventos</a></nav><div class="site-layout"><aside class="sidebar"><p class="eyebrow">EXPLORAR</p><nav class="side-nav"><a href="${p}index.html" data-nav="inicio"><span>⌂</span>Inicio</a><a href="${p}explorar/principios.html" data-nav="principios"><span>☆</span>Principios</a><a href="${p}explorar/roles.html" data-nav="roles"><span>♧</span>Roles</a><a href="${p}explorar/artefactos.html" data-nav="artefactos"><span>⚒</span>Artefactos</a><a href="${p}explorar/eventos.html" data-nav="eventos"><span>⊙</span>Eventos</a></nav><section class="download-card"><span class="download-icon">↓</span><h2>Descarga el<br>Framework</h2><p>Accede a la versión completa en PDF y otros formatos.</p><a href="${p}docs/Draft_Framework_Humano_IA.pdf" target="_blank" rel="noopener noreferrer">Descargar ahora</a></section></aside><main class="content-page"><section class="page-main">${pageContent}</section><aside class="page-empty"><p class="eyebrow">EN ESTA PÁGINA</p><nav class="page-toc" aria-label="Contenido de la página"></nav></aside></main></div><button class="back-to-top" type="button" aria-label="Volver al inicio">↑</button>`);
+document.body.insertAdjacentHTML('afterbegin', `<header class="topbar"><a class="brand" href="${p}index.html"><span class="brand-mark"><i></i><i></i><i></i></span><span><strong>Augmented Thinking</strong><small>Human judgment. Artificial intelligence.</small></span></a><nav class="top-nav"><a href="${p}index.html" data-nav="inicio">Inicio</a><a href="${p}superior/framework.html" data-nav="framework">Framework</a><a href="${p}superior/recursos.html" data-nav="recursos">Recursos</a><a href="${p}superior/autores.html" data-nav="autores">Autores</a><span class="language-switcher" aria-label="Seleccionar idioma"><a href="?lang=es" lang="es" hreflang="es" aria-current="true">ES</a><span aria-hidden="true">|</span><a href="?lang=en" lang="en" hreflang="en">EN</a></span><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir navegación principal"><span></span><span></span><span></span></button></nav></header><nav class="mobile-menu" id="mobile-menu" aria-label="Explorar framework"><a href="${p}index.html" data-nav="inicio"><span>⌂</span>Inicio</a><a href="${p}explorar/principios.html" data-nav="principios"><span>☆</span>Principios</a><a href="${p}explorar/roles.html" data-nav="roles"><span>♧</span>Roles</a><a href="${p}explorar/artefactos.html" data-nav="artefactos"><span>⚒</span>Artefactos</a><a href="${p}explorar/eventos.html" data-nav="eventos"><span>⊙</span>Eventos</a></nav><div class="site-layout"><aside class="sidebar"><p class="eyebrow">EXPLORAR</p><nav class="side-nav"><a href="${p}index.html" data-nav="inicio"><span>⌂</span>Inicio</a><a href="${p}explorar/principios.html" data-nav="principios"><span>☆</span>Principios</a><a href="${p}explorar/roles.html" data-nav="roles"><span>♧</span>Roles</a><a href="${p}explorar/artefactos.html" data-nav="artefactos"><span>⚒</span>Artefactos</a><a href="${p}explorar/eventos.html" data-nav="eventos"><span>⊙</span>Eventos</a></nav><section class="download-card"><span class="download-icon">↓</span><h2>Descarga el<br>Framework</h2><p>Accede a la versión completa en PDF y otros formatos.</p><a href="${p}docs/Draft_Framework_Humano_IA.pdf" target="_blank" rel="noopener noreferrer">Descargar ahora</a></section></aside><main class="content-page"><section class="page-main">${pageContent}</section><aside class="page-empty"><p class="eyebrow">EN ESTA PÁGINA</p><nav class="page-toc" aria-label="Contenido de la página"></nav></aside></main></div><button class="back-to-top" type="button" aria-label="Volver al inicio">↑</button>`);
 const headerBrand = document.querySelector('.brand');
 headerBrand.setAttribute('aria-label', 'CoSolutioning, inicio');
 headerBrand.innerHTML = `<img class="brand-logo brand-logo--full" src="${p}assets/images/logo-cosolutioning-wordmark-black.png" alt="CoSolutioning" width="176" height="35"><img class="brand-logo brand-logo--mark" src="${p}assets/images/Logo_CoSolutioning01.png" alt="" width="50" height="50"><span class="brand-copy"><small>The Collaborative Solutioning Framework</small></span>`;
@@ -238,9 +243,9 @@ const pagePaths = siteLanguage === 'en' ? englishLocalPages : localPages;
 document.querySelectorAll('[data-nav]').forEach((a) => { a.href = pagePaths[a.dataset.nav]; });
 document.querySelector('.brand').href = 'index.html';
 document.querySelector('.download-card p').textContent = 'Accede a la versión completa en PDF.';
-if (current === 'framework') document.querySelector('.article-content').insertAdjacentHTML('beforeend', '<p class="article-next-action"><a href="principios.html">Comenzar <span aria-hidden="true">→</span></a></p>');
 const spanishReadingFlow = {
-  principios: { previous: null, next: { href: 'roles.html', label: 'Roles' } },
+  framework: { previous: null, next: { href: 'principios.html', label: 'Principios' } },
+  principios: { previous: { href: 'framework.html', label: 'El Framework' }, next: { href: 'roles.html', label: 'Roles' } },
   roles: { previous: { href: 'principios.html', label: 'Principios' }, next: { href: 'artefactos.html', label: 'Artefactos' } },
   artefactos: { previous: { href: 'roles.html', label: 'Roles' }, next: { href: 'eventos.html', label: 'Eventos' } },
   eventos: { previous: { href: 'artefactos.html', label: 'Artefactos' }, next: null }
@@ -265,6 +270,67 @@ document.querySelectorAll('.article-content h2').forEach((heading) => {
   heading.id = id;
   pageToc.insertAdjacentHTML('beforeend', `<a class="toc-level-${heading.tagName.toLowerCase()}" href="#${id}">${heading.textContent}</a>`);
 });
+const swapPrimaryAndSecondaryNavigation = () => {
+  const topNav = document.querySelector('.top-nav');
+  const sideNav = document.querySelector('.side-nav');
+  if (!topNav || !sideNav) return;
+
+  const startLabel = document.documentElement.lang === 'en' ? 'Get Started' : 'Comenzar';
+  const frameworkLink = Array.from(topNav.querySelectorAll(':scope > a')).find((link) => link.dataset.nav === 'framework');
+  const primaryLinks = Array.from(sideNav.querySelectorAll(':scope > a')).map((link) => {
+    const primaryLink = link.cloneNode(true);
+    primaryLink.querySelector('span')?.remove();
+    return primaryLink;
+  });
+  if (frameworkLink) {
+    const startLink = frameworkLink.cloneNode(true);
+    startLink.textContent = startLabel;
+    primaryLinks.splice(1, 0, startLink);
+  }
+  const secondaryIcons = {
+    inicio: '<svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/><path d="M9 21v-6h6v6"/></svg>',
+    framework: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m9 15 6-6M10 9h5v5"/></svg>',
+    recursos: '<svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v16H6.5A2.5 2.5 0 0 0 4 21Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v16h5.5A2.5 2.5 0 0 1 20 21Z"/></svg>',
+    autores: '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>'
+  };
+  const secondaryLinks = Array.from(topNav.querySelectorAll(':scope > a')).map((link) => {
+    const secondaryLink = link.cloneNode(true);
+    if (secondaryLink.dataset.nav === 'framework') secondaryLink.textContent = startLabel;
+    secondaryLink.prepend(Object.assign(document.createElement('span'), { className: 'nav-icon', innerHTML: secondaryIcons[secondaryLink.dataset.nav] }));
+    return secondaryLink;
+  });
+  const languageSwitcher = topNav.querySelector('.language-switcher');
+
+  topNav.querySelectorAll(':scope > a').forEach((link) => link.remove());
+  primaryLinks.forEach((link) => topNav.insertBefore(link, languageSwitcher));
+  sideNav.replaceChildren(...secondaryLinks);
+};
+
+const configureMobileNavigation = () => {
+  const topbar = document.querySelector('.topbar');
+  const topNav = document.querySelector('.top-nav');
+  const sideNav = document.querySelector('.side-nav');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (!topbar || !topNav || !sideNav || !mobileMenu || document.querySelector('.mobile-primary-nav')) return;
+
+  const primaryNav = document.createElement('nav');
+  primaryNav.className = 'mobile-primary-nav';
+  primaryNav.setAttribute('aria-label', topNav.getAttribute('aria-label') || 'Navegación principal');
+  topNav.querySelectorAll(':scope > a').forEach((link) => {
+    const mobileLink = link.cloneNode(true);
+    mobileLink.querySelector('span')?.remove();
+    primaryNav.append(mobileLink);
+  });
+  topbar.insertBefore(primaryNav, topNav);
+
+  mobileMenu.replaceChildren();
+  sideNav.querySelectorAll(':scope > a').forEach((link) => mobileMenu.append(link.cloneNode(true)));
+  mobileMenu.setAttribute('aria-label', sideNav.getAttribute('aria-label') || 'Explorar framework');
+};
+
+swapPrimaryAndSecondaryNavigation();
+configureMobileNavigation();
+
 const menuButton = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 menuButton.addEventListener('click', () => {
