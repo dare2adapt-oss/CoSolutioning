@@ -81,7 +81,7 @@ document.querySelector('.menu-toggle').setAttribute('aria-label', 'Open explore 
 document.querySelector('.sidebar .eyebrow').textContent = 'EXPLORE';
 document.querySelector('.download-card h2').innerHTML = 'Download the<br>Framework';
 document.querySelector('.download-card p').textContent = 'Access the complete PDF version.';
-document.querySelector('.download-card a').href = '../docs/Framework_Human_AI_EN.pdf';
+document.querySelector('.download-card a').href = '../docs/Framework_CoSolutioning_EN_V1.pdf';
 document.querySelector('.download-card a').textContent = 'Download now';
 document.querySelector('.page-empty .eyebrow').textContent = 'ON THIS PAGE';
 document.querySelector('.back-to-top').setAttribute('aria-label', 'Back to top');
